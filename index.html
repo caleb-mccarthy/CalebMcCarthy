@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Caleb McCarthy — Filmmaker</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Special+Elite&family=Bebas+Neue&display=swap" rel="stylesheet">
+<title>Caleb McCarthy — Filmmaker</title>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--w:#f0ece4;--b:#090909;--g:#777;--dg:#2a2a2a}
 html,body{width:100%;min-height:100%;background:var(--b);color:var(--w);font-family:'Special Elite',cursive;overflow-x:hidden}
+
+/* GRAIN */
 body::before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.055;
 background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 background-size:200px 200px;animation:gr .4s steps(1) infinite}
 @keyframes gr{0%,100%{transform:translate(0,0)}25%{transform:translate(-1%,-2%)}50%{transform:translate(2%,1%)}75%{transform:translate(-1%,2%)}}
+
 .inner{max-width:1060px;margin:0 auto;padding:4rem 2rem 6rem}
+
+/* PAGE HEADER */
 .page-header{display:flex;align-items:baseline;gap:2rem;margin-bottom:4rem;border-bottom:1px solid #1c1c1c;padding-bottom:1.5rem}
-.page-title{font-family:'UnifrakturCook',cursive;font-size:clamp(2rem,7vw,5rem);color:var(--w)}
-.back-link{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.3em;color:var(--dg);text-decoration:none;margin-left:auto;transition:color .3s}
-.back-link:hover{color:var(--w)}
-.sec-label{font-family:'Bebas Neue',sans-serif;font-size:.7rem;letter-spacing:.45em;color:#3a3a3a;text-transform:uppercase;margin-bottom:2.5rem;display:flex;align-items:center;gap:1.2rem}
+.page-title{font-family:'Special Elite',cursive;font-size:clamp(2rem,6vw,4rem);color:var(--w);letter-spacing:.04em}
+.back-link{font-family:'Special Elite',cursive;font-size:1.1rem;letter-spacing:.1em;color:#aaa;text-decoration:none;margin-left:auto;transition:color .3s}
+.back-link:hover{color:#fff}
+
+/* SECTION LABEL */
+.sec-label{font-family:'Courier Prime',monospace;font-size:.72rem;letter-spacing:.4em;color:#3a3a3a;text-transform:uppercase;
+margin-bottom:2.5rem;display:flex;align-items:center;gap:1.2rem}
 .sec-label::after{content:'';flex:1;height:1px;background:#161616}
-.footer{text-align:center;padding:2rem;font-size:.55rem;letter-spacing:.25em;color:#1a1a1a;text-transform:uppercase}
-</style>
-<style>
+
+.footer{text-align:center;padding:2rem;font-family:'Courier Prime',monospace;font-size:.55rem;letter-spacing:.25em;color:#1a1a1a;text-transform:uppercase}
+
 .home{position:relative;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}
 .home-bg{position:absolute;inset:0;background-size:cover;background-position:center 20%;filter:grayscale(100%) contrast(1.05);opacity:.52}
 .home-vignette{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 25%,rgba(0,0,0,.75) 85%)}
 .home-content{position:relative;z-index:2;text-align:center;padding:2rem}
-.home-name{font-family:'UnifrakturCook',cursive;font-size:clamp(3.5rem,11vw,10rem);line-height:1;color:var(--w);text-shadow:0 0 80px rgba(255,255,255,.08);opacity:0;animation:fu 1.4s ease .1s forwards}
+.home-name{font-family:'Special Elite',cursive;font-size:clamp(3rem,10vw,8rem);line-height:1.1;color:var(--w);
+letter-spacing:.06em;text-shadow:0 0 80px rgba(255,255,255,.08);opacity:0;animation:fu 1.4s ease .1s forwards}
+.divider{width:60px;height:1px;background:var(--g);margin:2rem auto 2.5rem;opacity:.4}
 .home-nav{display:flex;gap:4rem;justify-content:center;opacity:0;animation:fu 1.4s ease .7s forwards}
-.home-nav a{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.35em;color:var(--g);text-decoration:none;text-transform:uppercase;transition:color .3s;position:relative}
+.home-nav a{font-family:'Courier Prime',monospace;font-size:.9rem;letter-spacing:.3em;color:var(--g);text-decoration:none;
+text-transform:uppercase;transition:color .3s;position:relative}
 .home-nav a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--w);transition:width .4s}
 .home-nav a:hover{color:var(--w)}
 .home-nav a:hover::after{width:100%}
 @keyframes fu{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-.divider{width:60px;height:1px;background:var(--g);margin:2rem auto 2.5rem;opacity:.4}
 </style>
 </head>
 <body>
